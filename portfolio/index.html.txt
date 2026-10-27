@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sofie Riisgaard</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <nav>
+        <h2>Sofie Riisgaard</h2>
+
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#passions">Passions</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero">
+
+        <div class="hero-content">
+
+            <span class="tag">
+                Baking • Creativity • Nature
+            </span>
+
+            <h1>
+                Creating beautiful things, one recipe at a time.
+            </h1>
+
+            <p>
+                Welcome to my little corner of the internet.
+                I love baking, creating beautiful desserts,
+                exploring nature and finding inspiration in
+                everyday moments.
+            </p>
+
+            <a href="#gallery" class="btn">
+                Explore My World
+            </a>
+
+        </div>
+
+        <div class="hero-image">
+            <img src="images/profile.jpg" alt="Sofie">
+        </div>
+
+    </header>
+
+    <section id="about" class="about">
+
+        <div class="about-content">
+
+            <h2>About Me</h2>
+
+            <p>
+                I am passionate about baking and creating homemade treats,
+                from sourdough bread and cakes to seasonal desserts and pastries.
+                Food is not only about taste but also about creativity,
+                aesthetics and sharing moments with others.
+            </p>
+
+            <p>
+                Beyond the kitchen, I enjoy spending time by the coast,
+                appreciating natural landscapes and documenting beautiful
+                moments through photography.
+            </p>
+
+        </div>
+
+    </section>
+
+    <section id="gallery" class="gallery">
+
+        <h2>Favorite Creations</h2>
+
+        <div class="gallery-grid">
+
+            <img src="images/cake.jpg" alt="Cake">
+            <img src="images/bread.jpg" alt="Bread">
+            <img src="images/cupcakes.jpg" alt="Cupcakes">
+            <img src="images/pancakes.jpg" alt="Pancakes">
+            <img src="images/beach.jpg" alt="Beach">
+            <img src="images/cake.jpg" alt="Baking creation">
+
+        </div>
+
+    </section>
+
+    <section id="passions">
+
+        <h2>Things I Love</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>Baking</h3>
+
+                <p>
+                    Cakes, pastries, sourdough and creative desserts.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Photography</h3>
+
+                <p>
+                    Capturing beautiful moments and handmade creations.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Nature</h3>
+
+                <p>
+                    Beaches, open skies and peaceful landscapes.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer>
+
+        <p>
+            Made with ❤️ and lots of flour.
+        </p>
+
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
