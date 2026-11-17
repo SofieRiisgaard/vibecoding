@@ -1,6 +1,6 @@
 # vibecoding
 
-Always reed the agent first
+Always read the agent first
 
 Practicing vibe coding
 Vibe coding ftw
