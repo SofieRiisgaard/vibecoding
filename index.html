@@ -4,142 +4,298 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Sofie Riisgaard</title>
+    <title>Sofie Riisgaard — Baking &amp; Nature</title>
+    <meta name="description" content="A little pink world of baking, nature, and everyday magic. The personal site of Sofie Riisgaard.">
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%8E%80%3C/text%3E%3C/svg%3E">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <nav>
-        <h2>Sofie Riisgaard</h2>
+    <a class="skip-link" href="#main">Skip to content</a>
 
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#gallery">Gallery</a></li>
-            <li><a href="#passions">Passions</a></li>
-        </ul>
-    </nav>
+    <header class="site-header" id="siteHeader">
+        <nav class="nav container" aria-label="Main navigation">
+            <a class="logo" href="#top">Sofie<span>.</span></a>
 
-    <header class="hero">
+            <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
 
-        <div class="hero-content">
-
-            <span class="tag">
-                Baking • Creativity • Nature
-            </span>
-
-            <h1>
-                Creating beautiful things, one recipe at a time.
-            </h1>
-
-            <p>
-                Welcome to my little corner of the internet.
-                I love baking, creating beautiful desserts,
-                exploring nature and finding inspiration in
-                everyday moments.
-            </p>
-
-            <a href="#gallery" class="btn">
-                Explore My World
-            </a>
-
-        </div>
-
-        <div class="hero-image">
-            <img src="images/profile.jpg" alt="Sofie">
-        </div>
-
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#about">About</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#passions">Passions</a></li>
+                <li><a class="nav-cta" href="#contact">Say hi</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <section id="about" class="about">
+    <main id="main">
 
-        <div class="about-content">
+        <!-- ============ HERO ============ -->
+        <section class="hero" id="top">
+            <div class="hero__blob hero__blob--one" aria-hidden="true"></div>
+            <div class="hero__blob hero__blob--two" aria-hidden="true"></div>
 
-            <h2>About Me</h2>
+            <div class="container hero__grid">
+                <div class="hero__content reveal">
+                    <p class="eyebrow">Baking • Nature • Everyday magic</p>
 
-            <p>
-                I am passionate about baking and creating homemade treats,
-                from sourdough bread and cakes to seasonal desserts and pastries.
-                Food is not only about taste but also about creativity,
-                aesthetics and sharing moments with others.
-            </p>
+                    <h1>A little <em>pink</em> world of baking &amp; nature.</h1>
 
-            <p>
-                Beyond the kitchen, I enjoy spending time by the coast,
-                appreciating natural landscapes and documenting beautiful
-                moments through photography.
-            </p>
+                    <p class="hero__lead">
+                        Hi, I'm Sofie — baker, nature lover, and collector of pretty
+                        little moments. Welcome to my corner of the internet.
+                    </p>
 
-        </div>
+                    <div class="hero__actions">
+                        <a href="#gallery" class="btn btn--primary">See my creations</a>
+                        <a href="#about" class="btn btn--ghost">About me</a>
+                    </div>
 
-    </section>
+                    <ul class="hero__chips">
+                        <li>🍰 Home baker</li>
+                        <li>🌿 Coastline wanderer</li>
+                        <li>📷 Photo taker</li>
+                    </ul>
+                </div>
 
-    <section id="gallery" class="gallery">
+                <div class="hero__media reveal">
+                    <div class="hero__frame">
+                        <img src="images/web/profile.jpg" alt="Portrait of Sofie" width="1000" height="1250" fetchpriority="high">
+                    </div>
 
-        <h2>Favorite Creations</h2>
+                    <span class="sticker sticker--one">freshly baked</span>
+                    <span class="sticker sticker--two">100% butter</span>
 
-        <div class="gallery-grid">
-
-            <img src="images/cake.jpg" alt="Cake">
-            <img src="images/bread.jpg" alt="Bread">
-            <img src="images/cupcakes.jpg" alt="Cupcakes">
-            <img src="images/pancakes.jpg" alt="Pancakes">
-            <img src="images/beach.jpg" alt="Beach">
-            <img src="images/cake.jpg" alt="Baking creation">
-
-        </div>
-
-    </section>
-
-    <section id="passions">
-
-        <h2>Things I Love</h2>
-
-        <div class="cards">
-
-            <div class="card">
-                <h3>Baking</h3>
-
-                <p>
-                    Cakes, pastries, sourdough and creative desserts.
-                </p>
+                    <svg class="sparkle sparkle--one" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                        <path d="M12 0c.7 6.4 4.9 10.6 12 12-7.1 1.4-11.3 5.6-12 12-.7-6.4-4.9-10.6-12-12C7.1 10.6 11.3 6.4 12 0z"/>
+                    </svg>
+                    <svg class="sparkle sparkle--two" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                        <path d="M12 0c.7 6.4 4.9 10.6 12 12-7.1 1.4-11.3 5.6-12 12-.7-6.4-4.9-10.6-12-12C7.1 10.6 11.3 6.4 12 0z"/>
+                    </svg>
+                </div>
             </div>
+        </section>
 
-            <div class="card">
-                <h3>Photography</h3>
+        <!-- ============ ABOUT ============ -->
+        <section class="section about" id="about">
+            <div class="container about__grid">
+                <div class="about__text reveal">
+                    <p class="eyebrow">About me</p>
+                    <h2>Flour on my hands, salt in my hair.</h2>
 
-                <p>
-                    Capturing beautiful moments and handmade creations.
-                </p>
+                    <p>
+                        I'm Sofie — a home baker with a soft spot for pretty desserts
+                        and a serious love for the outdoors. My kitchen is usually
+                        covered in flour, and my camera roll is mostly cakes and
+                        coastlines.
+                    </p>
+                    <p>
+                        I bake because it makes people happy. A loaf of sourdough,
+                        a plate of cupcakes, a cake for someone's birthday — small
+                        things that turn an ordinary day into a little celebration.
+                    </p>
+                    <p>
+                        When I'm not baking, you'll find me walking by the water,
+                        collecting shells, and taking photos of whatever catches the
+                        light. This site is where those two worlds meet.
+                    </p>
+                </div>
+
+                <aside class="favorites reveal" aria-label="A few of my favorite things">
+                    <h3>A few of my favorite things</h3>
+                    <ul>
+                        <li><span>Sourdough Sundays</span><span>01</span></li>
+                        <li><span>Beach walks</span><span>02</span></li>
+                        <li><span>Buttercream</span><span>03</span></li>
+                        <li><span>Golden hour</span><span>04</span></li>
+                        <li><span>Fresh berries</span><span>05</span></li>
+                    </ul>
+                </aside>
             </div>
+        </section>
 
-            <div class="card">
-                <h3>Nature</h3>
+        <!-- ============ GALLERY ============ -->
+        <section class="section gallery" id="gallery">
+            <div class="container">
+                <div class="section-head reveal">
+                    <div>
+                        <p class="eyebrow">Gallery</p>
+                        <h2>Favorite creations</h2>
+                    </div>
+                    <p class="section-head__text">
+                        A few cakes, bakes, and coastlines I'm especially fond of.
+                        Click any photo to take a closer look.
+                    </p>
+                </div>
 
-                <p>
-                    Beaches, open skies and peaceful landscapes.
-                </p>
+                <div class="gallery__grid">
+                    <button class="gallery__item reveal" type="button"
+                            data-caption="Layer cake — vanilla sponge, raspberry jam, and far too much buttercream.">
+                        <img src="images/web/cake.jpg" alt="A tall layer cake with pink buttercream" width="1000" height="1250" loading="lazy">
+                        <span class="gallery__overlay">
+                            <span class="gallery__title">Layer cake</span>
+                            <span class="gallery__hint">View photo</span>
+                        </span>
+                    </button>
+
+                    <button class="gallery__item reveal" type="button"
+                            data-caption="Sourdough — a slow Sunday morning, starter bubbles, and a crackly crust.">
+                        <img src="images/web/bread.jpg" alt="A freshly baked loaf of sourdough bread" width="1000" height="1250" loading="lazy">
+                        <span class="gallery__overlay">
+                            <span class="gallery__title">Sourdough</span>
+                            <span class="gallery__hint">View photo</span>
+                        </span>
+                    </button>
+
+                    <button class="gallery__item reveal" type="button"
+                            data-caption="Cupcakes — pink frosting because, honestly, why not?">
+                        <img src="images/web/cupcakes.jpg" alt="Cupcakes with pink frosting" width="1000" height="1250" loading="lazy">
+                        <span class="gallery__overlay">
+                            <span class="gallery__title">Cupcakes</span>
+                            <span class="gallery__hint">View photo</span>
+                        </span>
+                    </button>
+
+                    <button class="gallery__item reveal" type="button"
+                            data-caption="Pancakes — stacked high with berries and a drizzle of maple.">
+                        <img src="images/web/pancakes.jpg" alt="A stack of pancakes with berries" width="1000" height="1250" loading="lazy">
+                        <span class="gallery__overlay">
+                            <span class="gallery__title">Pancakes</span>
+                            <span class="gallery__hint">View photo</span>
+                        </span>
+                    </button>
+
+                    <button class="gallery__item reveal" type="button"
+                            data-caption="Coastline — where I go to clear my head and fill my camera roll.">
+                        <img src="images/web/beach.jpg" alt="A calm beach and open sky" width="1000" height="1250" loading="lazy">
+                        <span class="gallery__overlay">
+                            <span class="gallery__title">Coastline</span>
+                            <span class="gallery__hint">View photo</span>
+                        </span>
+                    </button>
+
+                    <button class="gallery__item reveal" type="button"
+                            data-caption="Celebration cake — made for someone I love, eaten far too quickly.">
+                        <img src="images/web/cake-2.jpg" alt="A decorated celebration cake" width="1000" height="1250" loading="lazy">
+                        <span class="gallery__overlay">
+                            <span class="gallery__title">Celebration cake</span>
+                            <span class="gallery__hint">View photo</span>
+                        </span>
+                    </button>
+                </div>
             </div>
+        </section>
 
+        <!-- ============ PASSIONS ============ -->
+        <section class="section passions" id="passions">
+            <div class="container">
+                <div class="section-head reveal">
+                    <div>
+                        <p class="eyebrow">Passions</p>
+                        <h2>Things I love</h2>
+                    </div>
+                    <p class="section-head__text">
+                        Three simple pleasures that keep showing up in everything I do.
+                    </p>
+                </div>
+
+                <div class="cards">
+                    <article class="card reveal">
+                        <div class="card__icon" aria-hidden="true">🧁</div>
+                        <h3>Baking</h3>
+                        <p>
+                            Cakes, pastries, sourdough, and creative desserts —
+                            made from scratch and usually shared.
+                        </p>
+                        <ul class="card__tags">
+                            <li>Cakes</li>
+                            <li>Sourdough</li>
+                            <li>Pastry</li>
+                        </ul>
+                    </article>
+
+                    <article class="card reveal">
+                        <div class="card__icon" aria-hidden="true">🌊</div>
+                        <h3>Nature</h3>
+                        <p>
+                            Beaches, open skies, and quiet landscapes. Nature is
+                            where I recharge and find new ideas.
+                        </p>
+                        <ul class="card__tags">
+                            <li>Coast</li>
+                            <li>Walks</li>
+                            <li>Seasons</li>
+                        </ul>
+                    </article>
+
+                    <article class="card reveal">
+                        <div class="card__icon" aria-hidden="true">📷</div>
+                        <h3>Photography</h3>
+                        <p>
+                            Capturing beautiful moments, handmade creations, and
+                            the small details most people walk past.
+                        </p>
+                        <ul class="card__tags">
+                            <li>Details</li>
+                            <li>Light</li>
+                            <li>Memories</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ CONTACT ============ -->
+        <section class="section contact" id="contact">
+            <div class="container">
+                <div class="contact__card reveal">
+                    <p class="eyebrow eyebrow--light">Say hello</p>
+                    <h2>Let's bake something together.</h2>
+                    <p class="contact__text">
+                        Have a question, a recipe to swap, or just want to say hi?
+                        My inbox is always open.
+                    </p>
+                    <!-- Replace hello@example.com with your real email address -->
+                    <a class="btn btn--light" href="mailto:hello@example.com">hello@example.com</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="footer">
+        <div class="container footer__inner">
+            <p>© <span id="year">2026</span> Sofie Riisgaard</p>
+            <p class="footer__love">Made with <span aria-hidden="true">♥</span> and lots of flour.</p>
+            <a href="#top">Back to top ↑</a>
         </div>
-
-    </section>
-
-    <footer>
-
-        <p>
-            Made with ❤️ and lots of flour.
-        </p>
-
     </footer>
 
-    <script src="js/script.js"></script>
+    <!-- ============ LIGHTBOX ============ -->
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer" aria-hidden="true">
+        <button class="lightbox__close" id="lightboxClose" type="button" aria-label="Close photo viewer">×</button>
+        <button class="lightbox__nav lightbox__nav--prev" id="lightboxPrev" type="button" aria-label="Previous photo">‹</button>
 
+        <figure class="lightbox__figure">
+            <img id="lightboxImage" src="" alt="">
+            <figcaption id="lightboxCaption"></figcaption>
+        </figure>
+
+        <button class="lightbox__nav lightbox__nav--next" id="lightboxNext" type="button" aria-label="Next photo">›</button>
+    </div>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
