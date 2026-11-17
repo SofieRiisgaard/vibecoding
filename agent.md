@@ -10,13 +10,9 @@ It is build with html, css and js
 
 
 
-The colours should be pink like entering a world of Barbie
+The colors should be pink like entering a world of Barbie
 
 
 
-It should be simple and the language need to be american English
-
-
-
-
+It should be simple and the language need to be American English
 
